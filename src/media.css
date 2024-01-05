@@ -1,0 +1,17 @@
+@media(min-width:320px) and (max-width:575px){
+    /* .slick-prev {
+        position: absolute !important;
+        top: -40px !important;
+        left: 237px;
+    } */
+    .hero__left--content h1 {
+        font-size: 30px;
+    }
+    .NavSearchBox__Size, .menu__select--box{
+        width: auto;
+        
+    }
+    .profile__section{
+        display: none;
+    }
+}

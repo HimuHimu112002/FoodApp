@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #EEEFF0;
+}
+
+/* ================= Top Menu section start ==================*/
+
+.NavSearchBox__Size, .menu__select--box{
+  width: 500px;
+  padding: 10px 45px;
+  box-shadow: none !important;
+}
+
+.NavSearchBox__Size:focus{
+  border: 1px solid #F99F1C !important;
+}
+
+.NavSearchBox{
+  position: relative;
+}
+
+.Search__icon{
+  font-size: 30px;
+  color: #F99F1C;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.menu__select--box{
+  width: 200px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.menu__select--box option{
+  padding: 20px 20px !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.menu__select--box:focus{
+  border: 1px solid #F99F1C !important;
+}
+
+.profile__section{
+  width: 50px;
+  height: 50px;
+  background-color: #FD6011;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* =================== Top Menu section end ====================== */
+
+/* =================== hero section start ======================== */
+
+.hero__Bg--color{
+  border-radius: 50px;
+  background-color: #F99F1C;
+}
+
+.hero__left--content{
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero__left--content h1{
+  font-size: 60px;
+}
+
+.hero__left--content p{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* ============== hero section end ===================== */
+
+
+
+/* ============== Food Product section start ============== */
+
+.product__img{
+  margin: auto;
+  width: 310px;
+  height: 300px;
+}
+
+.product__des{
+  display: flex;
+  justify-content: space-around;
+}
+
+.product__price{
+  color: #F99F1C;
+}
+
+/* .ddd{
+  position: relative;
+} */
+/* .slick-next{
+  position: absolute !important;
+  top: -40px !important;
+  right: 50px;
+}
+
+.slick-prev{
+  position: absolute !important;
+  top: -40px !important;
+  left: 1100px;
+} */
+
+.slick-dots .slick-active{
+  border-radius: 100%;
+}
+
+
+.slick-dots .slick-active::before{
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #F99F1C;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+}
+/* ============================= Food Product section end ======================== */
