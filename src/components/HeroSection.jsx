@@ -1,5 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
+
 const HeroSection = () => {
   return (
     <Container className='hero__Bg--color mt-5'>
@@ -10,8 +11,7 @@ const HeroSection = () => {
                     <p>Authentic Food, Quick Service, Fast Delivery</p>
                 </div>
             </Col>
-            <Col className='' md="6">
-
+            <Col md="6">
                 <img className='img-fluid w-100' src='image/bannerLogo.png'/>
             </Col>
         </Row>
