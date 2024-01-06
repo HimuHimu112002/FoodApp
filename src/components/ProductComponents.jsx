@@ -8,13 +8,25 @@ const ProductComponents = () => {
 
     let [product, setProduct] = useState([])
     useEffect(()=>{
-      async function AllData(){
-        let data = await axios.get("http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10")
-        setProduct(data.data.Items)
-      }
-      AllData()
+      // async function AllData(){
+      //   let data = await fetch("http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10")
+      //   let re = await data.json()
+
+      //   setProduct(re)
+      //   //setProduct(data.data.Items)
+      // }
+      // AllData()
+      // console.log(product?.Items)
+
+      (async()=>{
+        let data = await fetch("http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10")
+        let re = await data.json()
+        setProduct(re)
+        
+      })()
+      console.log(product)
     },[])
-    
+
     const settings = {
         dots: true,
         infinite: true,
@@ -57,7 +69,7 @@ const ProductComponents = () => {
       <Row className='ddd'>
         <Col>
           <Slider {...settings}>
-            {product.map((item,i)=>(
+            {/* {product.map((item,i)=>(
                 
               <div  key={i} className='product__content--main'>
                   <img className='product__img rounded img-fluid ml-1' src={item.ImageUrl}/>
@@ -66,7 +78,17 @@ const ProductComponents = () => {
                     <h4 className='product__price text-center mt-3'>Price : {item.Price}</h4>
                   </div>
               </div>
-            ))}
+            ))} */}
+            
+                
+              {/* <div  key={i} className='product__content--main'>
+                  <img className='product__img rounded img-fluid ml-1' src=/>
+                  <div className='product__des'>
+                    <h4 className='text-center mt-3'>{}</h4>
+                    <h4 className='product__price text-center mt-3'>Price : {item.Price}</h4>
+                  </div>
+              </div> */}
+           
           </Slider>
         </Col>
       </Row>
