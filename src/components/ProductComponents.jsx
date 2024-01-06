@@ -9,7 +9,7 @@ const ProductComponents = () => {
     let [product, setProduct] = useState([])
     useEffect(()=>{
       async function AllData(){
-        let data = await axios.get("https://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10")
+        let data = await axios.get("http://www.api.technicaltest.quadtheoryltd.com/api/Item?page=1&pageSize=10")
         setProduct(data.data.Items)
       }
       AllData()
