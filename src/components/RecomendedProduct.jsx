@@ -6,10 +6,10 @@ const RecomendedProduct = () => {
   return (
     <Container className='my-5'>
         <Row>
-            <Col>
-                <h1>Recomended</h1>
-                <ProductComponents/>
-            </Col>
+          <Col>
+            <h1>Recomended</h1>
+            <ProductComponents/>
+          </Col>
         </Row>
     </Container>
   )

@@ -60,6 +60,11 @@ body{
   cursor: pointer;
 }
 
+.Nav__layout{
+  display: flex;
+  width: 100%;
+}
+
 /* =================== Top Menu section end ====================== */
 
 /* =================== hero section start ======================== */
@@ -96,6 +101,8 @@ body{
   margin: auto;
   width: 310px;
   height: 300px;
+  padding: 3px;
+
 }
 
 .product__des{
@@ -107,25 +114,9 @@ body{
   color: #F99F1C;
 }
 
-/* .ddd{
-  position: relative;
-} */
-/* .slick-next{
-  position: absolute !important;
-  top: -40px !important;
-  right: 50px;
-}
-
-.slick-prev{
-  position: absolute !important;
-  top: -40px !important;
-  left: 1100px;
-} */
-
 .slick-dots .slick-active{
   border-radius: 100%;
 }
-
 
 .slick-dots .slick-active::before{
   content: "";
@@ -137,8 +128,11 @@ body{
   top: 0px;
   left: 0px;
 }
+
 /* ============================= Food Product section end ======================== */
 
+
+/* ============================= footer section start ======================== */
 
 .footerSearchBox__Size{
   width: 100% !important;
@@ -157,7 +151,7 @@ body{
 
 .footer__btn{
   position: absolute;
-  top: 9px;
+  top: 12px;
   right: 10px;
   padding: 5px 30px;
   background-color: #FD6011 !important;
@@ -179,7 +173,7 @@ body{
 .footer__social{
   width: 200px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   cursor: pointer;
 }
 
@@ -204,3 +198,5 @@ body{
   background-color: #FD6011 !important;
   color: white !important;
 }
+
+/* ============================= Footer section end ======================== */

@@ -6,10 +6,10 @@ const ProductSlide = () => {
   return (
     <Container className='my-5'>
         <Row>
-            <Col>
-                <h1>Popular</h1>
-                <ProductComponents/>
-            </Col>
+          <Col>
+            <h1>Popular</h1>
+            <ProductComponents/>
+          </Col>
         </Row>
     </Container>
   )

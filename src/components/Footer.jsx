@@ -9,14 +9,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
+
     let [error, setError] = useState("")
     let [mail, setMail] = useState("")
 
     let handleCusEmail = (e) =>{
         setMail(e.target.value)
         setError("")
-
     }
+
 
     let handleSubmitEmail = () =>{
         if(!mail){
@@ -48,31 +49,39 @@ const Footer = () => {
                     </Form>
 
                     <div className='footer__socialIcon--section py-3'>
-                        <div>
-                            <h2 className='pt-5 footer__left--subDes'>Pti.</h2>
-                            <p className='py-3 footer__left--subDes'>Copy Right Wirth pti</p>
-                        </div>
-                        <div className='footer__social'>
-                            <div className='footer__social--icon'>
-                                <FaGoogle />
-                            </div>
-                            <div className='footer__social--icon'>
-                                <IoLogoTwitter />
-                            </div>
-                            <div className='footer__social--icon'>
-                                <FaLinkedinIn />
-                            </div>
-                        </div>
+                        <Row className='Col__change'>
+
+                            <Col className='m-auto' sm="10" md="6">
+                                <div>
+                                <h2 className='pt-5 footer__left--subDes'>Pti.</h2>
+                                <p className='py-3 footer__left--subDes'>Copy Right Wirth pti</p>
+                                </div>
+                            </Col>
+
+                            <Col className='m-auto' sm="10" md="6">
+                                <div className='footer__social mt-5'>
+                                    <div className='footer__social--icon'>
+                                        <FaGoogle />
+                                    </div>
+                                    <div className='footer__social--icon'>
+                                        <IoLogoTwitter />
+                                    </div>
+                                    <div className='footer__social--icon'>
+                                        <FaLinkedinIn />
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
                     </div>
                 </Col>
 
                 <Col className='text-center' md="5">
                     <img className='img-fluid w-50' src='image/footerLogo.png'/>
                 </Col>
+
             </Row>
         </Container>
     </div>
   )
 }
-
 export default Footer

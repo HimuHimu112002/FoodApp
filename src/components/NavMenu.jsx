@@ -1,10 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { CiSearch } from "react-icons/ci";
 import { CgProfile } from "react-icons/cg";
-
 
 function NavMenu() {
   return (
@@ -12,7 +10,9 @@ function NavMenu() {
       <Container>
 
         <h2>Pti.</h2>
-        <Form className="NavSearchBox m-auto shadow-sm">
+        <div className='Nav__layout'>
+
+          <Form className="NavSearchBox m-auto shadow-sm">
             <Form.Control
             type="search"
             placeholder="Search Audiobook"
@@ -20,15 +20,18 @@ function NavMenu() {
             aria-label="Search"
             />
             <CiSearch className='Search__icon' />
-        </Form>
-        <Form.Select className='menu__select--box shadow'>
+          </Form>
+
+          <Form.Select className='menu__select--box shadow'>
             <option value="1">Home</option>
             <option value="2">Details</option>
             <option value="3">Category</option>
             <option value="3">My Favorites</option>
             <option value="3">Profile</option>
             <option value="3">Log In / Sign Up</option>
-        </Form.Select>
+          </Form.Select>
+
+        </div>
 
         <div className='profile__section'>
             <CgProfile/>
@@ -36,8 +39,6 @@ function NavMenu() {
 
         </Container>
     </Navbar>
-
   );
-
 }
 export default NavMenu;
